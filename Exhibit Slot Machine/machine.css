@@ -1,0 +1,131 @@
+/*body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #app {
+    width: 100%;
+    height: 100%;
+    background: #4949FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .doors {
+    display: flex;
+  }
+  
+  .door {
+    background: #EAFE00;
+    width: 500px;
+    height: 410px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  .boxes {
+    /* transform: translateY(0); *//*
+    transition: transform 1s ease-in-out;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12rem;
+  }
+  
+  .buttons {
+    margin: 0.5rem 0rem 2rem 0rem;
+  }
+  
+  button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin: 0 0.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+*/
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #app {
+    width: 100%;
+    height: 100%;
+    background: #4949FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .doors {
+    display: flex;
+  }
+  
+  .door {
+    background: #EAFE00;
+    width: 500px;
+    height: 410px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  .boxes {
+    /* transform: translateY(0); */
+    transition: transform 1s ease-in-out;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12rem;
+  }
+  
+  .buttons {
+    margin: 0.5rem 0rem 2rem 0rem;
+  }
+  
+  button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin: 0 0.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+
+/*Spinning animation to the boxes where the items sit*/
+  .boxes {
+    transform: translateY(0);
+    transition: transform 1s ease-in-out;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    100% {
+      transform: translateY(0) rotate(360deg);
+    }
+  }
+  
